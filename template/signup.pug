@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+  
+block style
+    style 
+      include ../static/style.css 
+      include ../static/styleSignup.css
+
+block content 
+    div.container 
+       h2 Sign Up Form 
+       div.section1
+          form(action="/signup",method="post")
+              label(for="myname") Username:
+              input(type="text",class="name",id="myname",placeholder="Enter username" )
+              label(for="myname") Password:
+              input(type="text",class="name",id="myname",placeholder="Enter password" )
+              label(for="myname") Confirm Password:
+              input(type="text",class="name",id="myname",placeholder="Enter confirm password" )
+       div.signup
+          button(type="button") Submit 
+          #a(href="http://google.com") Already register
+          //- lName:input(type="text",placeholder="Enter username" )

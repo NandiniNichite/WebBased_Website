@@ -1,0 +1,33 @@
+h2{
+    align-items: center;
+    text-align: center;
+}
+.section1{
+    display:block;
+    width:250px;
+    margin:8px auto;
+
+
+}
+.section1 form{
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    margin: 8px 8px;
+    padding:14px 14px;
+    
+}
+input{
+    margin:8px;
+    padding:4px 4px;
+}
+.signup{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:16px 16px;
+    margin-bottom: 200px;
+}
+.signup button{
+    margin: 6px 6px;
+}

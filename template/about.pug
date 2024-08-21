@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+  
+block style
+    style 
+      include ../static/style.css 
+      include ../static/styleAbout.css 
+
+block content 
+   div.container 
+      div.box
+         img(src="../static/singer-2389876_1280.jpg", alt="", srcset="") 
+         h3 Nandini Nichite 
+         p KC College of Engineering,Thane
+         
+         div.msg
+         button(type="button") #[a(href="http://instagram.com/nandininichite")] Follow 
+         button(type="button") #[a(href="http://gmail.com/nandininichite@gmail.com")] Message
+
+      div.box
+         img(src="../static/pexels-wendywei-1864637.jpg", alt="", srcset="") 
+         h3 Pallavi Sukte 
+         p KC College of Engineering,thane
+         div.msg
+         button(type="button") #[a(href="http://instagram.com/pallavisukte")] Follow  
+         button(type="button") #[a(href="http://instagram.com/pallavisukte")]  Message
+   div.section     
+      div.text
+         h2 Navigation bar
+         input(type="textarea",cols=30,row=10,placeholder="Enter your feedback") 
+   

@@ -1,0 +1,56 @@
+doctype html
+html 
+  head 
+    title Singing Academy
+    style 
+      include ../static/style.css 
+  body 
+    nav#navbar
+       ul
+           div.logo 
+              img(src="/static/mic-148576_1280.png", alt="", srcset="")
+           li #[a(href="http://google.com") Home]  
+           li #[a About]
+           li #[a Services] 
+           li #[a Contact]
+
+           div.text button(type="button") Contact us
+
+    section#introSection 
+      //-  | Welcome to our Singing Website 
+      //-  | Learn and Develop more skills
+      div Welcome to our Singing Website 
+      div.small Learn and Develop more skills
+    section#headingSection
+      h1 Softy with some sticky vocals
+    section#sponsorSection
+      h2 Our Singing
+      div.main
+        div.box
+            h5 Classical 
+              div.imgs
+                 img(src="/static/pexels-skitterphoto-675960.jpg", alt="", srcset="")
+                 p Classical singing is the study of knowing how to sing in a SAFE AND HEALTHY WAY. 
+                 
+        div.box
+            h5 Ghazal
+              div.imgs 
+               img(src="/static/singer-2389876_1280.jpg", alt="", srcset="")
+               p The ghazal is composed of a minimum of five couplets—and typically that are structurally and emotionally autonomous.
+        div.box    
+            h5 Hip-Hop
+            div.imgss
+               img(src="/static/guitar-1354022_1280.jpg", alt="", srcset="")
+               p Rap music is our new trending one.
+    section#footer
+      | Our Sponsors
+      div.photo 
+          img(src="/static/pexels-altabena-10142683.jpg", alt="", srcset="")
+          img(src="/static/pexels-duophenom-1238259-2417848.jpg", alt="", srcset="")   
+          img(src="/static/pexels-mikebirdy-104372.jpg", alt="", srcset="")
+          img(src="/static/pexels-skitterphoto-675960.jpg", alt="", srcset="")
+    footer#footers 
+      | Copyright @2024 SingingAcademy.com | All Rights Reserved
+    
+    script 
+      include ../static/index.js

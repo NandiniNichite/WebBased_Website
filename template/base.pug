@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Singing Academy
+    block scripts
+    block style
+  body
+    nav#navbar
+       ul
+           div.logo 
+              img(src="/static/mic-148576_1280.png", alt="", srcset="")
+           li #[a(href="http://google.com") Home]  
+           li #[a(href="/about") About]
+           li #[a Services] 
+           li #[a(href="/contact") Contact]      
+           div.search 
+              //- button(type="button"  #[a(href="/sign up")]) Sign up
+              a(href="/signup") Sign up
+              button Search
+              
+              
+    block content     
+    footer#footers 
+        | Copyright @ 2024 SingingAcademy.com | All Rights Reserved
