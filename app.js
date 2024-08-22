@@ -27,7 +27,6 @@ app.get('/signup',(req,res)=>{
     const params={}
     res.status(200).render('signup.pug',params);
 })
-
 app.listen(port,()=>{
     console.log(`The application started successfully on port ${port}`);
 })
